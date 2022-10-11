@@ -7,7 +7,7 @@ const router = useRouter()
     <div class="flex flex-col text-center">
       <span class="text-2xl font-500 text-red-5 mb-2"> 404 Not Find </span>
       <p>来到了一个不存在的地方</p>
-      <p class="btn mt-4 block" @click="router.back()">
+      <p class="btn mt-4 block" @click="router.push('/')">
         back
       </p>
     </div>

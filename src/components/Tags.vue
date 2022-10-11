@@ -31,7 +31,7 @@ const router = useRouter()
     <div class="flex flex-row h-10 border-b-gray-300 dark:border-color-gray-8 border-b-0.5 w-full items-center px-10% 2xl:px-15%">
       <div
         v-for="item in tag"
-        :key="item.name" :class="router.currentRoute.value.fullPath === item.path ? 'text-blue' : 'text-gray-5'"
+        :key="item.name" :class="router.currentRoute.value.fullPath === item.path ? 'text-blue' : ''"
         class="mr-5 font-400 text-base opacity-80"
       >
         <router-link :to="item.path">
