@@ -1,6 +1,9 @@
 <script setup lang="ts">
 // const { t, availableLocales, locale } = useI18n()
 
+const getNowCopyRight = () => {
+  return `CopyRight@${new Date().getFullYear()} · HAHA-CLUB`
+}
 // const toggleLocales = () => {
 //   // change to some real logic
 //   const locales = availableLocales
@@ -10,6 +13,8 @@
 
 <template>
   <footer class="bg-gray-1 dark:bg-gray-9 h-30">
-    <span>footer</span>
+    <div class="flex h-full justify-center items-center">
+      <span class="opacity-60 text-sm">{{ getNowCopyRight() }}</span>
+    </div>
   </footer>
 </template>

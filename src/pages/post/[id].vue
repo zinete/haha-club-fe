@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const props = defineProps<{ id: string }>()
+const props = defineProps<{ id: any }>()
 
 // const router = useRouter()
-const user = useUserStore()
+// const user = useUserStore()
 
 const html = `→社区知识星球已上线，欢迎加入！
 Authing 是一款身份云产品，怎么理解呢？大家平时在使用互联网应用或者 SaaS 的时候，通常做的第一件事情就是登录。那么，在登录的过程中，会看到一个登录框，这个登录框是用来记录用户的信息，对企业进行访问控制，而 Authing 就是把这个登录框给 SaaS 出来。
@@ -183,12 +183,36 @@ Ziran #2 9 天前
 
 <template>
   <div>
-    <span> {{ user }}</span>
-    <span>{{ props.id }}</span>
-    <div v-html="html" />
+    <div class="flex flex-row pt-2 pb-10">
+      <div class="w-70% ">
+        <div class="w-full bg-gray-1 dark:bg-gray-9 rounded-sm  mb-2">
+          <div class="w-full bg-gray-2 p-4 dark:bg-gray-6  rounded-t-sm h-20">
+            <h2 class="text-2xl  opacity-80">
+              标题 {{ props.id }}
+            </h2>
+          </div>
+
+          <div class="w-full h-20 p-4">
+            222
+          </div>
+        </div>
+        <div class="w-full bg-gray-1 dark:bg-gray-9 p-4 rounded-sm">
+          <!-- 文章详情 -->
+          <div class="text-base opacity-80" v-html="html" />
+        </div>
+      </div>
+      <div class="w-30%  ml-2">
+        <div class="w-full p-4 bg-gray-1 dark:bg-gray-9 rounded-sm">
+          <div class="btn w-full bg-green-9 dark:bg-green-6 opacity-80 h-12 flex justify-center items-center">
+            发布新的哈哈
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 
 </style>
+

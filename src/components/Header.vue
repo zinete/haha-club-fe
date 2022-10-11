@@ -10,12 +10,12 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <header class="border-b-1 dark:border-color-gray-8 h-12 flex flex-row items-center justify-between px-8%">
+  <header class="border-b-1 dark:border-color-gray-8 h-14 flex flex-row items-center justify-between px-8%">
     <!-- <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
       <div i-carbon-language />
     </a> -->
     <div class="flex flex-row">
-      <button class="text-xl text-pink-6 font-600 hover:text-pink-8" @click="router.replace('/')">
+      <button class="text-2xl text-pink-6 font-600 hover:text-pink-8" @click="router.replace('/')">
         HaHa Club
       </button>
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
