@@ -183,8 +183,8 @@ Ziran #2 9 天前
 
 <template>
   <div>
-    <div class="flex flex-row pt-2 pb-10">
-      <div class="w-70% ">
+    <div class="flex md:flex-row flex-col pt-2 pb-10">
+      <div class="md:w-70% w-full">
         <div class="w-full bg-gray-1 dark:bg-gray-9 rounded-sm  mb-2">
           <div class="w-full bg-gray-2 p-4 dark:bg-gray-6  rounded-t-sm h-20">
             <h2 class="text-2xl  opacity-80">
@@ -201,7 +201,7 @@ Ziran #2 9 天前
           <div class="text-base opacity-80" v-html="html" />
         </div>
       </div>
-      <div class="w-30%  ml-2">
+      <div class="md:w-30% md:ml-2">
         <div class="w-full p-4 bg-gray-1 dark:bg-gray-9 rounded-sm">
           <div class="btn w-full bg-green-9 dark:bg-green-6 opacity-80 h-12 flex justify-center items-center">
             发布新的哈哈
